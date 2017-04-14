@@ -28,7 +28,7 @@ def sendgmail(username,password,mailfrom,mailto,subject,content):
     smtp.close()
 
 def sendqqmail(username,password,mailfrom,mailto,subject,content):
-    gserver = 'smtp.exmail.qq.com'
+    gserver = 'smtp.qq.com'
     gport = 25
 
     try:
@@ -53,7 +53,7 @@ def main():
     to=sys.argv[1]
     subject=sys.argv[2]
     content=sys.argv[3]
-    sendqqmail('zabbix@haodai.com','2013H#d3dB','zabbix@haodai.com',to,subject,content)
+    sendqqmail('1234567@qq.com','aaaaaaaaaa','1234567@qq.com',to,subject,content)
 
 if __name__ == "__main__":
     main()
