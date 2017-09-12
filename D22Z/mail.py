@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 #-*- coding: UTF-8 -*-
 import os,sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 import getopt
 import smtplib
 from email.MIMEText import MIMEText
