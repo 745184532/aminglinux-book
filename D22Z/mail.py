@@ -15,7 +15,7 @@ def sendqqmail(username,password,mailfrom,mailto,subject,content):
 
     try:
         # msg = MIMEText(unicode(content).encode('utf-8')) //如果发送的邮件有乱码，可以尝试把这行改成如下：
-        msg = MIMEText(content.'plan'.'utf-8') 
+        msg = MIMEText(content,'plan','utf-8') 
         msg['from'] = mailfrom
         msg['to'] = mailto
         msg['Reply-To'] = mailfrom
